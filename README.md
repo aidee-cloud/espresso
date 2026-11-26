@@ -44,7 +44,7 @@ On any Mac with the Xcode Command Line Tools (`xcode-select --install`):
 
 This produces `build/Espresso.app` and `build/Espresso-1.0.0.zip` (the file to share).
 
-No Mac handy? Push this folder to GitHub and the included workflow (`.github/workflows/build.yml`) builds the zip on a macOS runner. Download it from the run's *Artifacts*, or push a tag like `v1.0.0` to attach it to a GitHub Release.
+No Mac handy? Every push to `main` builds the app on a macOS runner and publishes it as a GitHub Release named after the `VERSION` file. To ship a new version, change `VERSION` and push.
 
 ### Removing the security warning (optional)
 
